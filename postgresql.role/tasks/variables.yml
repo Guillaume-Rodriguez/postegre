@@ -3,7 +3,7 @@
 
 - name: Include Os-specific variables (centos)
   include_vars: "{{ ansible_distribution }}-{{ ansible_distribution_version.split('.')[0] }}.yml"
-  when: ansible_distribution == "Centos"
+  when: ansible_distribution == "CentOS"
 
 #Mettre les différentes versions OS
 
